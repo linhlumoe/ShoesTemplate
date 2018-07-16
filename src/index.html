@@ -4,14 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>Shoes Template</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -21,7 +24,94 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <div class="container-fluid __wrapper">
+    <div class="__wrapper-overlay">
+      <section class="navigation">
+        <div class="row">
+          <div class="col-xs-10 col-sm-10 col-md-10 gender">
+            <div class="gender-button button active">
+              <img src="img/icons8-male-user-50.png" />
+            </div>
+            <div class="gender-button button">
+              <img src="img/icons8-female-profile-50.png" />
+            </div>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 shopping-bag">
+            <img src="img/icons8-shopping-bag-50.png" height="65px" />
+          </div>
+        </div>
+      </section>
+      <section class="main-content">
+        <div class="item-list">
+          <div class="item-box">
+            <div class="item-name">
+              <img src="img/ultraboost.png" width="80%"/>
+              <h2>CLASSIC ADIDAS</h2>
+            </div>
+            <h2 class="item-price">
+              RS. 2,595
+            </h2>
+            <div class="item-action">
+              <h4 class="favorite">
+                <i class="icon-heart button like-button active"></i>
+                250
+              </h4>
+              <h6 class="button choose-button text-right">
+                SHOP THIS
+              </h6>
+            </div>
+          </div>
+          <div class="item-box">
+            <div class="item-name">
+              <img src="img/ultraboost.png" width="80%"/>
+              <h2>ATHLETIC SNEAKER</h2>
+            </div>
+            <h2 class="item-price">
+              RS. 2,300
+            </h2>
+            <div class="item-action">
+              <h4 class="favorite">
+                <i class="icon-heart button like-button"></i>
+                250
+              </h4>
+              <h6 class="button choose-button text-right">
+                SHOP THIS
+              </h6>
+            </div>
+          </div>
+          <div class="item-box">
+            <div class="item-name">
+              <img src="img/ultraboost.png" width="80%"/>
+              <h2>ULTRABOOST</h2>
+            </div>
+            <h2 class="item-price">
+              RS. 2,999
+            </h2>
+            <div class="item-action">
+              <h4 class="favorite">
+                <i class="icon-heart button like-button"></i>
+                400
+              </h4>
+              <h6 class="button choose-button text-right">
+                SHOP THIS
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dot">
+          <svg width="10" height="10" class="active">
+            <circle cx="5" cy="5" r="5" />
+          </svg>
+          <svg width="10" height="10">
+            <circle cx="5" cy="5" r="5" />
+          </svg>
+          <svg width="10" height="10">
+            <circle cx="5" cy="5" r="5" />
+          </svg>
+        </div>
+      </section>
+    </div>
+  </div>
 
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
@@ -31,6 +121,9 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

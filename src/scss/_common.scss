@@ -1,5 +1,121 @@
-html {
-  color: #222;
-  font-size: 5em;
-  line-height: 1.4;
+@import "mixins";
+
+.button {
+  cursor: pointer;
+}
+
+.__wrapper {
+  font-family: 'Alegreya Sans', sans-serif;
+  height: 100vh;
+  background-image: url(https://www.sirpierre.se/wp-content/uploads/2016/04/white-porsche-adidas-ultra-boost-04_jidaoi.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  .__wrapper-overlay {
+    background-color: #b5b8b963;
+    width: 100%;
+    height: 100%;
+    .navigation {
+      .gender {
+        display: inherit;
+        padding-left: 100px;
+        .gender-button {
+          background-color: #cfcfcc;
+          padding: 15px 5px;
+          margin-right: 5px;
+          &.active {
+            background-color: #525252;
+          }
+        }
+      }
+      .shopping-bag {
+        margin-top: 15px;
+        text-align: right;
+        img {
+          padding-right: 15px;
+        }
+      }
+    }
+    .main-content {
+      .item-list {
+        @include flexbox();
+        margin-top: 15vh;
+        align-items: center;
+        justify-content: center;
+        .item-box {
+          height: 60vh;
+          margin-right: 8vh;
+          padding: 20px;
+          overflow: hidden;
+          width: 20vw;
+          background-color: #ffffff;
+          border-radius: 10px;
+          &:last-child {
+            margin-right: 0;
+          }
+          .item-name {
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(center);
+            @include flex-direction(column);
+            height: 45vh;
+            color: #000000;
+            img {
+              -webkit-filter: drop-shadow(0 40px 50px #22224722);
+              filter: drop-shadow(0 40px 50px #22224722);
+            }
+            h2 {
+              margin-top: 10vh;
+              font-weight: 400;
+            }
+          }
+          .item-price {
+            color: #000000;
+            font-weight: 800;
+            margin-bottom: 30px;
+          }
+          .item-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .favorite {
+              color: #ffb0b3;
+              i.like-button {
+                margin-right: 10px;
+                &.active {
+                  color: #fc0000;
+                }
+              }
+            }
+            .choose-button {
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .carousel-dot {
+        @include flexbox();
+        margin-top: 5vh;
+        justify-content: center;
+        svg {
+          margin-right: 20px;
+          circle {
+            fill: #dedede;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          &.active {
+            circle {
+              fill: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
 }
